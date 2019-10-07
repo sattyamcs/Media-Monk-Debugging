@@ -1,0 +1,303 @@
+/* setup */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    border: 0!important;
+    clip: rect(0 0 0 0)!important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+}
+
+
+/* Banner Styles */
+
+.banner {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    border: solid 1px;
+    overflow: hidden;
+    background-color: #fff;
+
+
+    #div_main {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+
+        #bg,
+        #bg_planet {
+            position: absolute;
+            top: -20px;
+            left: -5px;
+            display: block;
+        }
+
+        #copy1 {
+            position: absolute;
+            width: 300px;
+            height: 600px;
+            opacity: .85;
+
+            img {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .sparkles {
+            position: absolute;
+            width: 300px;
+            height: 500px;
+
+            .sparkle {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                background-color: #fff;
+            }
+        }
+
+        .shootingStarContainer {
+            position: absolute;
+            width: 48px;
+            height: 600px;
+            transform-origin: 24px 600px;
+            top: 200px;
+            left: 400px;
+
+            .shootingStar {
+                position: absolute;
+            }
+        }
+
+        #windowImg {
+            position: absolute;
+        }
+
+
+
+
+        .gravityAssets {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            #coffee {
+                position: absolute;
+                top: 50px;
+                right: -20px;
+            }
+
+            #coffeeBubble {
+                position: absolute;
+                top: 60px;
+                right: 120px;
+            }
+
+            #coffeeBubble2 {
+                position: absolute;
+                top: 60px;
+                right: 70px;
+            }
+
+            #coffeeBubble3 {
+                position: absolute;
+                top: 61px;
+                right: 44px;
+            }
+
+            #saucer {
+                position: absolute;
+                top: 226px;
+                right: -40px;
+            }
+
+            #spoon {
+                position: absolute;
+                top: 200px;
+                right: 0px;
+            }
+
+            #couch {
+                position: absolute;
+                bottom: 0px;
+                left: -150px;
+                transform-origin: 60%;
+                transform: rotate(-10deg);
+            }
+
+            #pillow {
+                position: absolute;
+                top: 415px;
+                right: -10px;
+            }
+
+            #flowerLeaf {
+                position: absolute;
+                transform: rotate(-31deg);
+                transform-origin: 15px 43px;
+                top: 383px;
+                left: 1px;
+            }
+
+            #flowerPettle2 {
+                position: absolute;
+                top: 380px;
+                left: 10px;
+            }
+
+            #flowerPettle {
+                position: absolute;
+                top: 390px;
+                left: 10px;
+            }
+
+            #flowerStem {
+                position: absolute;
+                transform: rotate(-18deg);
+                top: 319px;
+                left: -14px;
+            }
+
+            #flower1 {
+                position: absolute;
+                transform: rotate(-18deg);
+                top: 357px;
+                left: 10px;
+            }
+            #flower2 {
+                position: absolute;
+                transform: rotate(-70deg) scale(.8);
+                top: 327px;
+                left: -2px;
+            }
+
+            #flowerBottle {
+                position: absolute;
+                transform: rotate(-31deg);
+                top: 440px;
+                left: -13px;
+            }
+
+            #flowerBig {
+                position: absolute;
+                top: 340px;
+                left: -30px;
+            }
+        }
+
+        #copy1e {
+            bottom: 30px;
+        }
+
+        #copy2 {
+            top: 210px;
+        }
+
+        #copy3 {
+            top: 240px;
+        }
+
+        #copy4 {
+            top: 270px;
+        }
+
+        .endcopy {
+            position: absolute;
+        
+            width: 100%;
+            height: 20px;
+
+            text-align: center;
+            font-family: 'Montserrat', Arial, Sans-Serif;
+            font-weight: 800;
+            font-size: 18px;
+            color: #fff;
+            
+            /** smooth animation fix **/
+             -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+        }
+
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 120px;
+            width: 60px;
+            height: 32px;
+        }
+
+        #ctaButtonShadow {
+            position: absolute;
+            bottom: 28px;
+            left: 92px;
+            width: 120px;
+            height: 45px;
+        }
+
+        #ctaButton {
+            position: absolute;
+            bottom: 38px;
+            left: 101px;
+            width: 101px;
+            height: 25px;
+            border-radius: 15px;
+            background-color: #1b9fd6;
+            
+            font-family: "Montserrat", Arial, Sans-Serif;
+            font-size: 12px;
+            font-weight: 400;
+
+            color: #fff;
+
+            text-align: center;
+            padding-top: 4px;
+
+            &.over {
+                background-color: #fff;
+                color: #1b9fd6;
+            }
+        }
+
+        .bannerClick {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            background: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+        }
+    }
+}
