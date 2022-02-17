@@ -34,6 +34,6 @@ class StarElement {
         TweenMax.to(this.el, Utils.randomBetween(5, 10) / 10, { opacity: 1, ease: Quad.easeInOut, repeat: -1, yoyo: true, delay: Utils.randomBetween(1, 50) / 10 });
 
         // stop sparkling after 15 seconds
-        TweenMax.to(document.querySelector('.sparkle'), .5, {delay:15, opacity: 0, ease: Quad.easeInOut});
+        TweenMax.to(document.querySelector('.sparkle'), .5, {delay:30, opacity: 0, ease: Quad.easeInOut});
     }
 }
