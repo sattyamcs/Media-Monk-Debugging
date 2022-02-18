@@ -193,7 +193,7 @@ body {
       left: 101px;
       width: 101px;
       height: 25px;
-      border: 2px solid red;
+      /* border: 2px solid red; */
       border-radius: 15px;
       background-color: #1b9fd6;
       font-family: "Montserrat", Arial, Sans-Serif;
